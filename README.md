@@ -103,5 +103,47 @@ To https://github.com/Abdoulhakim89/git-cafe-exercise.git
 ```
 ### Exercise 2
 ```
+User@ABDUL-HAKIM-MUHOZI MINGW64 ~/OneDrive/Desktop/Git_Exercises 1/git-cafe-exercise (main)
+$ git checkout -b exercise2
+Switched to a new branch 'exercise2'
 
+User@ABDUL-HAKIM-MUHOZI MINGW64 ~/OneDrive/Desktop/Git_Exercises 1/git-cafe-exercise (exercise2)
+$ git checkout -b fix/bugfixing
+Switched to a new branch 'fix/bugfixing'
+
+User@ABDUL-HAKIM-MUHOZI MINGW64 ~/OneDrive/Desktop/Git_Exercises 1/git-cafe-exercise (fix/bugfixing)
+$ git add .
+
+User@ABDUL-HAKIM-MUHOZI MINGW64 ~/OneDrive/Desktop/Git_Exercises 1/git-cafe-exercise (fix/bugfixing)
+$ git commit -m 'Changed the title of index-4.html'
+[fix/bugfixing 1eff486] Changed the title of index-4.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@ABDUL-HAKIM-MUHOZI MINGW64 ~/OneDrive/Desktop/Git_Exercises 1/git-cafe-exercise (fix/bugfixing)
+$ git push
+fatal: The current branch fix/bugfixing has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin fix/bugfixing
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+User@ABDUL-HAKIM-MUHOZI MINGW64 ~/OneDrive/Desktop/Git_Exercises 1/git-cafe-exercise (fix/bugfixing)
+$ git push --set-upstream origin fix/bugfixing
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.65 KiB | 153.00 KiB/s, done.
+Total 7 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'fix/bugfixing' on GitHub by visiting:
+remote:      https://github.com/Abdoulhakim89/git-cafe-exercise/pull/new/fix/bugfixing
+remote:
+To https://github.com/Abdoulhakim89/git-cafe-exercise.git
+ * [new branch]      fix/bugfixing -> fix/bugfixing
+branch 'fix/bugfixing' set up to track 'origin/fix/bugfixing'.
 ```
