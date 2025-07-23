@@ -147,3 +147,42 @@ To https://github.com/Abdoulhakim89/git-cafe-exercise.git
  * [new branch]      fix/bugfixing -> fix/bugfixing
 branch 'fix/bugfixing' set up to track 'origin/fix/bugfixing'.
 ```
+### Exercise 3
+```
+User@ABDUL-HAKIM-MUHOZI MINGW64 ~/OneDrive/Desktop/Git_Exercises 1/git-cafe-exercise (main)
+$ git checkout -b Exercise3
+Switched to a new branch 'Exercise3'
+
+User@ABDUL-HAKIM-MUHOZI MINGW64 ~/OneDrive/Desktop/Git_Exercises 1/git-cafe-exercise (Exercise3)
+$ git commit -a -m "hotfix on index4.html"
+[Exercise3 62972fc] hotfix on index4.html
+ 2 files changed, 149 insertions(+), 1 deletion(-)
+
+User@ABDUL-HAKIM-MUHOZI MINGW64 ~/OneDrive/Desktop/Git_Exercises 1/git-cafe-exercise (Exercise3)
+$ git push
+fatal: The current branch Exercise3 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Exercise3
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+User@ABDUL-HAKIM-MUHOZI MINGW64 ~/OneDrive/Desktop/Git_Exercises 1/git-cafe-exercise (Exercise3)
+$ git push --set-upstream origin Exercise3
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.56 KiB | 266.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'Exercise3' on GitHub by visiting:
+remote:      https://github.com/Abdoulhakim89/git-cafe-exercise/pull/new/Exercise3
+remote:
+To https://github.com/Abdoulhakim89/git-cafe-exercise.git
+ * [new branch]      Exercise3 -> Exercise3
+branch 'Exercise3' set up to track 'origin/Exercise3'.
+```
